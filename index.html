@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="Резюме Катерини Тарасенко — копірайтерки, редакторки та комунікаційниці з Кам'янця-Подільського.">
+  <title>Катерина Тарасенко — копірайтерка та редакторка</title>
+  <style>
+    :root {
+      --ink: #19271f;
+      --muted: #647168;
+      --paper: #f4f1eb;
+      --card: #fffefa;
+      --green: #355c45;
+      --lime: #d9e6a5;
+      --line: #dce1d7;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+    a { color: inherit; text-decoration-color: #9cac87; text-underline-offset: 3px; }
+    .page { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 34px 0 64px; }
+    .topline { display: flex; justify-content: space-between; align-items: center; padding: 0 0 24px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .topline .mark { display: flex; align-items: center; gap: 10px; }
+    .mark::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px #dfe8d4; }
+    .hero { display: grid; grid-template-columns: 1fr 265px; gap: 50px; align-items: end; padding: 69px 0 45px; }
+    .eyebrow { margin: 0 0 18px; color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+    h1 { max-width: 700px; margin: 0; font: 500 clamp(54px, 8vw, 92px)/.98 var(--serif); letter-spacing: -.055em; }
+    h1 span { color: var(--green); }
+    .role { margin: 22px 0 0; color: var(--muted); font-size: 18px; letter-spacing: .015em; }
+    .contact { display: grid; gap: 13px; padding: 19px 0 5px 22px; border-left: 1px solid #cbd3c7; font-size: 13px; }
+    .contact a { text-decoration: none; }
+    .contact a:hover { color: var(--green); text-decoration: underline; }
+    .contact .label { display: block; margin-bottom: 2px; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    .intro { display: grid; grid-template-columns: 1fr 265px; gap: 50px; padding: 29px 32px; background: var(--green); color: #f9f8f2; border-radius: 3px; }
+    .intro blockquote { margin: 0; max-width: 700px; font: 400 clamp(20px, 2.8vw, 29px)/1.4 var(--serif); letter-spacing: -.015em; }
+    .intro-note { align-self: center; color: #d7e0d3; font-size: 12px; line-height: 1.7; }
+    .content { display: grid; grid-template-columns: 1fr 265px; gap: 62px; padding-top: 52px; }
+    .main-column, .side-column { min-width: 0; }
+    section { margin-bottom: 42px; }
+    .section-heading { display: flex; align-items: baseline; gap: 13px; margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--line); font: 500 27px/1.2 var(--serif); letter-spacing: -.025em; }
+    .section-heading .index { color: #87958a; font: 700 10px var(--sans); letter-spacing: .1em; }
+    .about { margin: 0; max-width: 700px; color: #39483e; font-size: 15px; }
+    .skills-inline { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .pill { padding: 6px 10px; border: 1px solid #d6ddd0; border-radius: 99px; color: #435448; font-size: 11px; font-weight: 650; }
+    .job { position: relative; margin: 0 0 26px; padding-left: 19px; border-left: 1px solid #cbd5c9; }
+    .job::before { position: absolute; top: 5px; left: -4px; width: 7px; height: 7px; border: 1px solid var(--green); border-radius: 50%; background: var(--paper); content: ""; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .job h3 { margin: 0; font-size: 15px; line-height: 1.4; }
+    .date { flex: 0 0 auto; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .045em; }
+    .org { margin: 4px 0 9px; color: var(--muted); font-size: 13px; }
+    .job ul { margin: 0; padding-left: 17px; color: #435047; font-size: 13px; }
+    .job li { padding: 2px 0 2px 2px; }
+    .school { padding: 18px 19px; background: var(--card); border: 1px solid #e7e6dc; }
+    .school h3 { margin: 0 0 6px; font: 500 19px/1.3 var(--serif); }
+    .school p { margin: 0; color: var(--muted); font-size: 13px; }
+    .side-card { margin-bottom: 27px; }
+    .side-title { margin: 0 0 14px; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    .skill-group { margin-bottom: 17px; }
+    .skill-group strong { display: block; margin-bottom: 4px; font-size: 13px; }
+    .skill-group p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .language { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+    .language span:last-child { color: var(--muted); }
+    .availability { padding: 17px; background: var(--lime); color: #28372b; }
+    .availability strong { display: block; margin-bottom: 4px; font: 500 18px var(--serif); }
+    .availability p { margin: 0; font-size: 11px; line-height: 1.6; }
+    footer { display: flex; justify-content: space-between; gap: 20px; margin-top: 8px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; letter-spacing: .04em; }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 34px, 600px); padding-top: 21px; }
+      .hero, .intro, .content { grid-template-columns: 1fr; gap: 25px; }
+      .hero { padding: 48px 0 30px; }
+      .contact { grid-template-columns: 1fr 1fr; padding: 0; border: 0; }
+      .intro { gap: 14px; padding: 23px; }
+      .content { padding-top: 38px; gap: 0; }
+      .side-column { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+      .availability { align-self: start; }
+      .job-head { align-items: flex-start; flex-direction: column; gap: 4px; }
+    }
+    @media (max-width: 430px) {
+      .topline { font-size: 9px; }
+      .contact, .side-column { grid-template-columns: 1fr; }
+      h1 { font-size: 58px; }
+      footer { flex-direction: column; gap: 5px; }
+    }
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      body { background: #fff; font-size: 11px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { width: 100%; max-width: none; padding: 0; }
+      .topline { padding-bottom: 12px; }
+      .hero { padding: 29px 0 23px; grid-template-columns: 1fr 220px; gap: 25px; }
+      h1 { font-size: 64px; }
+      .role { margin-top: 13px; font-size: 14px; }
+      .intro { grid-template-columns: 1fr 220px; gap: 25px; padding: 19px 22px; }
+      .intro blockquote { font-size: 20px; }
+      .content { grid-template-columns: 1fr 220px; gap: 35px; padding-top: 30px; }
+      section { margin-bottom: 26px; }
+      .job { margin-bottom: 17px; }
+      .section-heading { margin-bottom: 13px; font-size: 23px; }
+      .about { font-size: 12px; }
+      .job ul, .org { font-size: 11px; }
+      .pill { padding: 4px 7px; }
+      a { text-decoration: none; }
+      footer { margin-top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topline"><span class="mark">Профіль · 2026</span><span>Кам'янець-Подільський, Україна</span></div>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Слова з точністю до сенсу</p>
+        <h1>Катерина<br><span>Тарасенко</span></h1>
+        <p class="role">Копірайтерка · Редакторка · Комунікаційниця</p>
+      </div>
+      <address class="contact" aria-label="Контактна інформація">
+        <div><span class="label">Телефон</span><a href="tel:+380992721713">+380 99 272 17 13</a></div>
+        <div><span class="label">Електронна пошта</span><a href="mailto:kate1rina19@gmail.com">kate1rina19@gmail.com</a></div>
+        <div><span class="label">Місто</span>Кам'янець-Подільський</div>
+      </address>
+    </header>
+    <div class="intro">
+      <blockquote>«Пишу тексти, які хочеться дочитати. Поєдную редакторську точність із розумінням аудиторії».</blockquote>
+      <div class="intro-note">Від студентських ініціатив до міських молодіжних проєктів — допомагаю ідеям знаходити свій голос.</div>
+    </div>
+
+    <div class="content">
+      <div class="main-column">
+        <section aria-labelledby="about-title">
+          <h2 class="section-heading" id="about-title"><span class="index">01</span> Про мене</h2>
+          <p class="about">Копірайтерка й редакторка з досвідом роботи в громадській спілці та студентському самоврядуванні. Веду авторську рубрику у Facebook і Telegram, редагую тексти різних форматів, координую команду та комунікацію. Навчаюся на фізико-математичному факультеті КПНУ ім. І. Огієнка — тому однаково впевнено працюю і з текстом, і зі структурою, логікою та даними.</p>
+          <div class="skills-inline" aria-label="Ключові навички"><span class="pill">Копірайтинг</span><span class="pill">Редагування</span><span class="pill">Контент для соцмереж</span><span class="pill">Комунікації</span><span class="pill">Організація заходів</span><span class="pill">Командна робота</span></div>
+        </section>
+
+        <section aria-labelledby="experience-title">
+          <h2 class="section-heading" id="experience-title"><span class="index">02</span> Досвід</h2>
+          <article class="job">
+            <div class="job-head"><h3>Редакторка / копірайтерка</h3><span class="date">04.2026 — дотепер</span></div>
+            <p class="org">Громадська спілка «Мова. Культура. Підприємництво»</p>
+            <ul><li>Веду власну рубрику: від ідеї та дослідження теми до фінального тексту й публікації.</li><li>Пишу та редагую матеріали для Facebook і Telegram, адаптую їх до формату й аудиторії кожної платформи.</li><li>Працюю з дедлайнами та редакційними стандартами, підтримую єдиний голос і стиль рубрики.</li></ul>
+          </article>
+          <article class="job">
+            <div class="job-head"><h3>Голова студентського самоврядування</h3><span class="date">10.2026 — дотепер</span></div>
+            <p class="org">КПНУ ім. І. Огієнка, фізико-математичний факультет</p>
+            <ul><li>Очолюю самоврядування факультету: координую команду, планую діяльність і представляю інтереси студентів.</li><li>Організовую факультетські заходи та ініціативи.</li><li>Комунікую з адміністрацією факультету й університету, готую документи та звітність.</li></ul>
+          </article>
+          <article class="job">
+            <div class="job-head"><h3>Членкиня Молодіжної ради</h3><span class="date">08.2025 — дотепер</span></div>
+            <p class="org">При Кам'янець-Подільському міському голові</p>
+            <ul><li>Беру участь у засіданнях і обговоренні молодіжної політики міста, представляю інтереси молоді.</li><li>Долучаюся до обговорення та підтримки міських молодіжних ініціатив.</li></ul>
+          </article>
+        </section>
+
+        <section aria-labelledby="education-title">
+          <h2 class="section-heading" id="education-title"><span class="index">03</span> Освіта</h2>
+          <div class="school"><h3>Кам'янець-Подільський національний університет ім. І. Огієнка</h3><p>Фізико-математичний факультет · Середня освіта «Математика» · бакалаврат</p><p>2025–2029</p></div>
+        </section>
+      </div>
+
+      <aside class="side-column" aria-label="Навички та мови">
+        <section class="side-card">
+          <h2 class="side-title">Компетенції</h2>
+          <div class="skill-group"><strong>Контент і комунікації</strong><p>Копірайтинг, редагування, тексти для соцмереж, ведення рубрики, редакційні стандарти</p></div>
+          <div class="skill-group"><strong>Організація</strong><p>Планування заходів, координація команди, документи, комунікація зі стейкхолдерами</p></div>
+          <div class="skill-group"><strong>Платформи</strong><p>Facebook · Telegram</p></div>
+        </section>
+        <section class="side-card">
+          <h2 class="side-title">Мови</h2>
+          <div class="language"><span>Українська</span><span>Вільно</span></div>
+          <div class="language"><span>Англійська</span><span>A2–B1</span></div>
+        </section>
+        <div class="availability"><strong>Текст має значення</strong><p>Уважність до деталей, повага до читача та відповідальність за кожне слово.</p></div>
+      </aside>
+    </div>
+    <footer><span>Катерина Тарасенко · Резюме</span><span>Готова до нових змістовних проєктів</span></footer>
+  </main>
+</body>
+</html>
